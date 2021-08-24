@@ -39,9 +39,8 @@ http://localhost:3000/
 ###### 功能描述：
 此页面为网页首页，全网页一共只有两个部分：
 
-一条"Search Trends"的标语，在页面水平居中的位置；
-
-一个搜索框，搜索框的placeholder为“Search for new products in 961K stores”，搜索框右方有一个搜索按钮。
+1. 一条"Search Trends"的标语，在页面水平居中的位置；
+2. 一个搜索框，搜索框的placeholder为“Search for new products in 961K stores”，搜索框右方有一个搜索按钮。
 
 用户可以通过（1）按回车键或者（2）点击右方搜索按钮这两种不同的方式触发搜索功能，从而跳转至搜索页 http://localhost:3000/search/{keyword} 进行搜索并显示搜索结果。
 
@@ -166,4 +165,3 @@ http://localhost:3000/search/{keyword}
 - 页面需要美观、流畅，但是不需复杂，只需要最基本的框架和元素就可以
 - 尽量和上图中的UI做得像
 - 提交的web app需要为自适应（响应式设计、responsive design）
-
