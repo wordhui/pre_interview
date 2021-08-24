@@ -29,6 +29,8 @@
 
 其中以下的每个页面顶部都有一个导航栏，位置一直在网页最顶端，不随页面其他内容部分滑动。最左端显示一个网页Logo，名字为BestSearch，其中Best部分字体是加粗的。在任何一个网页点击这个BestSearch都会回到首页。
 
+![web app demo](https://github.com/interstellard/pre_interview/blob/main/assets/web_app_demo.gif?raw=true)
+
 每个页面的具体细节描述如下：
 
 #### 首页
@@ -47,6 +49,8 @@ http://localhost:3000/
 同时，在首页中，整个导航栏里只有左端名为“BestSearch”的Logo这一个元素。
 
 ###### UI如下图所示：
+
+![home page](https://github.com/interstellard/pre_interview/blob/main/assets/web_app_home.png?raw=true)
 
 
 #### 搜索页loading状态
@@ -74,6 +78,8 @@ http://localhost:3000/search/{keyword}
 
 ###### UI如下图所示：
 
+![search loading page](https://github.com/interstellard/pre_interview/blob/main/assets/web_app_search_loading.png?raw=true)
+
 #### 搜索页结果显示
 
 ###### 网页的本地URL：
@@ -91,6 +97,8 @@ http://localhost:3000/search/{keyword}
 同时，与上述“搜索页loading状态”相同，在搜索页的导航栏中，除了“BestSearch”的Logo以外，导航栏的水平居中位置会显示一个搜索框，搜索框中会显示目前正在搜索的关键词。
 
 ###### UI如下图所示：
+
+![search results page](https://github.com/interstellard/pre_interview/blob/main/assets/web_app_search_results.png?raw=true)
 
 ## Web app开发要求说明
 
