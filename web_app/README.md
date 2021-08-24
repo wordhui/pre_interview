@@ -1,6 +1,6 @@
 # 前端web app开发面试题
 
-我们希望你能独立的在10小时完成题目任务。结束后给 hr@simplylab.xyz发送题目的解答，邮件主题请用如下的命名规则：投递的简历平台+面试岗位+姓名+微信+电话。
+我们希望你能独立的在10小时内完成题目任务。结束后给 hr@simplylab.xyz发送题目的解答，邮件主题请用如下的命名规则：投递的简历平台+面试岗位+姓名+微信+电话。
 
 完成题目的过程中请注意代码、命名规范以及合理的代码注释。
 
@@ -28,6 +28,8 @@
 3. 搜索页结果显示
 
 其中以下的每个页面顶部都有一个导航栏，位置一直在网页最顶端，不随页面其他内容部分滑动。最左端显示一个网页Logo，名字为BestSearch，其中Best部分字体是加粗的。在任何一个网页点击这个BestSearch都会回到首页。
+
+需要实现的整个web app如下图demo所示：
 
 ![web app demo](https://github.com/interstellard/pre_interview/blob/main/assets/web_app_demo.gif?raw=true)
 
