@@ -116,6 +116,7 @@ http://localhost:3000/search/{keyword}
     "search_phrase": "hat",                # required(str):
   }
 ```
+其中`search_phrase`的值是用户输入的搜索keyword（string），比如"hat"、"best shoes"等。
 - 调用方法：POST
 - 参数格式：JSON
 - 输入参数：keyword
