@@ -108,7 +108,7 @@ http://localhost:3000/search/{keyword}
 
 - 调用接口：API: http://3.141.23.218:5000/interview/keyword_search
   
-  Parameters: 
+  Parameters（输入参数）: 
 ```
   
   {
@@ -119,7 +119,6 @@ http://localhost:3000/search/{keyword}
 其中`search_phrase`的值是用户输入的搜索keyword（string），比如"hat"、"best shoes"等。
 - 调用方法：POST
 - 参数格式：JSON
-- 输入参数：keyword
 
 输出：为JSON格式的数据，具体需要用到的JSON中的fields如下例所示：
 
