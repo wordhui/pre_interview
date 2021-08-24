@@ -12,12 +12,12 @@
 
 ## 本题目要求使用的技术和packages
 
-- ReactJS 
-  - create-react-app
-  - 全部使用Function Components (Hooks)，避免使用Class Components
-- React Router
-- Redux
-- Material UI
+- [ReactJS](https://www.react.org/) 
+  - [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html)
+  - 全部使用[Function Components](https://reactjs.org/docs/components-and-props.html) ([Hooks](https://reactjs.org/docs/hooks-intro.html))，避免使用Class Components
+- [React Router](https://reactrouter.com/web/guides/quick-start)
+- [React Redux](https://react-redux.js.org/)
+- [Material UI](https://material-ui.com/)
 
 
 ## 题目内容具体要求说明
