@@ -31,7 +31,7 @@
 
 需要实现的整个web app如下图demo所示：
 
-![web app demo](https://github.com/interstellard/pre_interview/blob/main/assets/web_app_demo.gif?raw=true)
+![web app demo](https://preinterview.s3.us-west-2.amazonaws.com/Lark20210825-170441.gif)
 
 每个页面的具体细节描述如下：
 
@@ -52,7 +52,7 @@ http://localhost:3000/
 
 ###### UI如下图所示：
 
-![home page](https://github.com/interstellard/pre_interview/blob/main/assets/web_app_home.png?raw=true)
+![home page](https://preinterview.s3.us-west-2.amazonaws.com/Lark20210825-170437.png)
 
 
 #### 搜索页loading状态
@@ -80,7 +80,7 @@ http://localhost:3000/search/{keyword}
 
 ###### UI如下图所示：
 
-![search loading page](https://github.com/interstellard/pre_interview/blob/main/assets/web_app_search_loading.png?raw=true)
+![search loading page](https://preinterview.s3.us-west-2.amazonaws.com/Lark20210825-170433.png)
 
 #### 搜索页结果显示
 
@@ -100,7 +100,7 @@ http://localhost:3000/search/{keyword}
 
 ###### UI如下图所示：
 
-![search results page](https://github.com/interstellard/pre_interview/blob/main/assets/web_app_search_results.png?raw=true)
+![search results page](https://preinterview.s3.us-west-2.amazonaws.com/Lark20210825-170429.png)
 
 ## Web app开发要求说明
 
