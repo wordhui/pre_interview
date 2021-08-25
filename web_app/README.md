@@ -29,9 +29,7 @@
 
 其中以下的每个页面顶部都有一个导航栏，位置一直在网页最顶端，不随页面其他内容部分滑动。最左端显示一个网页Logo，名字为BestSearch，其中Best部分字体是加粗的。在任何一个网页点击这个BestSearch都会回到首页。
 
-需要实现的整个web app如下图demo所示：
-
-![web app demo](https://preinterview.s3.us-west-2.amazonaws.com/Lark20210825-170441.gif?raw=true)
+需要实现的整个web app的demo可以点击这个链接观看：[web app demo](https://preinterview.s3.us-west-2.amazonaws.com/Lark20210825-170441.gif)
 
 每个页面的具体细节描述如下：
 
