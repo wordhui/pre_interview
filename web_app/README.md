@@ -101,7 +101,6 @@ http://localhost:3000/search/{keyword}
 ###### UI如下图所示：
 
 ![search results page](https://preinterview.s3.us-west-2.amazonaws.com/Lark20210825-170429.png)
-![test](https://cdn.shopify.com/s/files/1/1626/8079/products/Cholet-2_2048x.jpg?v=1628690174)
 
 ## Web app开发要求说明
 
