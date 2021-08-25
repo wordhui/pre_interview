@@ -4,7 +4,7 @@ SimplyLab（简约思维）是一支发源于硅谷的科技创新startup，坐�
 
 SimplyLab的精英技术团队由来自于斯坦福大学、清华大学、Google、Apple等全球顶级大学和科技互联网公司的大牛组成。Result driven和独立思考是我们奉行的原则，开放透明的交流是我们倡导的文化。在这里，除了有竞争力的报酬以外，你可以做有价值的事，和优秀的人共同进步，并获得真正的成长。
 
-联系方式: hr@simplylab.co
+联系方式: hr@simplylab.xyz
 
 ## 我们的面试方法
 
@@ -15,7 +15,7 @@ SimplyLab的精英技术团队由来自于斯坦福大学、清华大学、Googl
   * UI设计
     * [前端设计](https://github.com/broken_link.md)
   * 前端开发
-    * [前端开发](https://github.com/broken_link.md)
+    * [前端开发](https://github.com/interstellard/pre_interview/tree/main/web_app)
   * 后端及爬虫开发
     * [后端开发](https://github.com/broken_link.md)
     * [爬虫](https://github.com/broken_link.md)
@@ -52,4 +52,4 @@ SimplyLab的精英技术团队由来自于斯坦福大学、清华大学、Googl
 
 「简约思维」是一个技术驱动型公司，因而良好的工程师文化对于公司和团队来说至关重要。招聘到最合适的工程师则是其中很重要的一部分。这个文档旨在公开分享和传递我们的理念和推崇的文化，同时方便给对面试感兴趣的工程师提供一个参考。
 
-如果你想进一步的了解我们公司，请发送邮件到 hr@simplylab.co。我们期待与你的交流。
+如果你想进一步的了解我们公司，请发送邮件到 hr@simplylab.xyz。我们期待与你的交流。
