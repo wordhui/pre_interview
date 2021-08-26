@@ -185,7 +185,7 @@ doesn't pass access control check: No 'Access-Control-Allow-Origin' header is pr
 requested resource.
 ```
 
-可用通过安装[ : Access-Control-Allow-Origin Chrome插件](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf)来解决.
+可用通过安装[Access-Control-Allow-Origin Chrome插件](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf)来解决.
 
 安装这个插件后，将设置调整为如下截图所示即可解决CORS的问题：
 
