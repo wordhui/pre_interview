@@ -174,7 +174,7 @@ http://localhost:3000/search/{keyword}
 - 尽量和上图中的UI做得像
 - 提交的web app需要为自适应（响应式设计、responsive design）
 
-###### 常见问题
+## 常见问题
 
 如果你遇到如下错误
 
