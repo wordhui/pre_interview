@@ -10,11 +10,11 @@
 在本题目中请尽量使用[Scrapy](https://scrapy.org/)框架完成3个基本的数据抓取任务
 
 
-**3个基本的数据抓取任务:**
+**三个基本的数据抓取任务:**
 
-##### 获取雪球 美国股市涨幅最大的100个股票信息（股票代码，股票名称，当前价，涨跌幅，市值，市盈率）
+##### (1)获取雪球 美国股市涨幅最大的100个股票信息（股票代码，股票名称，当前价，涨跌幅，市值，市盈率）
 https://xueqiu.com/hq#exchange=US&firstName=3&secondName=3_0&order=desc&orderby=percent
 
-##### 爬取aliexpress的商品搜索页面的产品列表信息（商品名称，售价，评分）
+##### (2)爬取aliexpress的商品搜索页面的产品列表信息（商品名称，售价，评分，销量等）
 https://www.aliexpress.com/wholesale
 https://www.aliexpress.com/wholesale?SearchText=hat
