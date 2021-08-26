@@ -16,5 +16,5 @@
 https://xueqiu.com/hq#exchange=US&firstName=3&secondName=3_0&order=desc&orderby=percent
 
 ##### (2)爬取aliexpress的商品搜索页面的产品列表信息（商品名称，售价，评分，销量等）
-https://www.aliexpress.com/wholesale
-https://www.aliexpress.com/wholesale?SearchText=hat
+* https://www.aliexpress.com/wholesale
+* 例如：https://www.aliexpress.com/wholesale?SearchText=hat
