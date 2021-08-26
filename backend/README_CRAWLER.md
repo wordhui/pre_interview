@@ -7,7 +7,7 @@
 * 注册github账号，把代码上传到github，直接发送github项目链接给我们
 
 
-在本题目中请尽量使用[Scrapy](https://scrapy.org/)框架完成3个基本的数据抓取任务
+在本题目中请尽量使用[Scrapy](https://scrapy.org/)框架完成3个基本的数据抓取任务，对于（2）（3）任务中的搜索内容，可以使用例子中的“hat”，或者自行指定几个特定的搜索词，然后代码注释中或者说明文档中可以详细说明如果调整搜索词。
 
 
 **三个基本的数据抓取任务:**
@@ -15,6 +15,8 @@
 ##### (1)获取雪球 美国股市涨幅最大的100个股票信息（股票代码，股票名称，当前价，涨跌幅，市值，市盈率）
 https://xueqiu.com/hq#exchange=US&firstName=3&secondName=3_0&order=desc&orderby=percent
 
-##### (2)爬取aliexpress的商品搜索页面的产品列表信息（商品名称，售价，评分，销量等）
-* https://www.aliexpress.com/wholesale
-* 例如：https://www.aliexpress.com/wholesale?SearchText=hat
+##### (2)爬取aliexpress的商品搜索页面的产品列表信息（商品名称，图片url，售价，评分，销量等）
+* 例如搜索hat：https://www.aliexpress.com/wholesale?SearchText=hat
+
+##### (3)获取GoogleTrend的详情页的时间序列信息
+* 例如搜索hat：https://trends.google.com/trends/explore?q=hat&geo=CN
