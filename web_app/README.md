@@ -19,6 +19,7 @@
 - [React Redux](https://react-redux.js.org/)
 - [Material UI](https://material-ui.com/)
 
+在完成项目的过程中，如果你觉得需要安装其他的packages（第三方的包/库)来完成某些功能，请随意安装，方法不限。只要能按要求实现web app就可以。
 
 ## 题目内容具体要求说明
 
