@@ -173,3 +173,17 @@ http://localhost:3000/search/{keyword}
 - 页面需要美观、流畅，但是不需复杂，只需要最基本的框架和元素就可以
 - 尽量和上图中的UI做得像
 - 提交的web app需要为自适应（响应式设计、responsive design）
+
+###### 常见问题
+
+如果你遇到如下错误
+
+```
+Access to XMLHttpRequest at 'http://3.141.23.218:5000/interview/keyword_search' from origin 'http://localhost:3000' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+```
+
+可用通过安装[ : Access-Control-Allow-Origin Chrome插件](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf)来解决.
+
+安装这个插件后，将设置调整为如下截图所示即可解决CORS的问题：
+
+![search loading page](https://preinterview.s3.us-west-2.amazonaws.com/Allow_CORS.png?raw=true)
