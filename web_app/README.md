@@ -179,7 +179,10 @@ http://localhost:3000/search/{keyword}
 如果你遇到如下错误
 
 ```
-Access to XMLHttpRequest at 'http://3.141.23.218:5000/interview/keyword_search' from origin 'http://localhost:3000' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+Access to XMLHttpRequest at 'http://3.141.23.218:5000/interview/keyword_search' from origin 
+'http://localhost:3000' has been blocked by CORS policy: Response to preflight request 
+doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the 
+requested resource.
 ```
 
 可用通过安装[ : Access-Control-Allow-Origin Chrome插件](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf)来解决.
