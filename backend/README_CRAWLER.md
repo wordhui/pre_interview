@@ -18,5 +18,5 @@ https://xueqiu.com/hq#exchange=US&firstName=3&secondName=3_0&order=desc&orderby=
 ##### (2)爬取aliexpress的商品搜索页面的产品列表信息（商品名称，图片url，售价，评分，销量等）
 * 例如搜索hat：https://www.aliexpress.com/wholesale?SearchText=hat
 
-##### (3)获取GoogleTrend的详情页的时间序列信息
+##### (3)获取GoogleTrend的详情页的时间序列信息(例如其中的“Interest over time”图标的时间序列数据)
 * 例如搜索hat：https://trends.google.com/trends/explore?q=hat&geo=CN
