@@ -22,7 +22,7 @@
 - [Material UI](https://material-ui.com/)
 
 #### 开发过程中，需要满足以下要求：
-- 虽然网页内容简单，但是请使用Redux进行状态管理:
+- 虽然网页结构简单，但是请使用Redux进行状态管理:
   - 所有API都请在Redux Action里调用（[Redux Thunk](https://redux.js.org/tutorials/fundamentals/part-6-async-logic#using-the-redux-thunk-middleware)支持在Action里使用async function)；
   - 所有状态（state）请尽量全部用Redux（以及React Redux、Redux Thunk等）完成，尽量避免使用local state（[State Hook](https://reactjs.org/docs/hooks-state.html)）；
 - 所有的style都请尽量用[Material UI](https://material-ui.com/)组建完成
