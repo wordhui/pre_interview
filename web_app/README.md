@@ -1,6 +1,6 @@
 # 前端web app开发面试题
 
-我们希望你能独立的在4小时内完成题目任务。结束后给 hr@simplylab.xyz 发送题目的解答，邮件主题请用如下的命名规则：投递的简历平台+面试岗位+姓名+微信+电话。
+我们希望你能独立的在3小时内完成题目任务。结束后给 hr@simplylab.xyz 发送题目的解答，邮件主题请用如下的命名规则：**投递的简历平台+面试岗位+姓名+微信+电话**。
 
 完成题目的过程中请注意代码、命名规范以及合理的代码注释。
 
@@ -10,27 +10,42 @@
 - GitHub上需要有说明文档，写明详细步骤说明，让我们可以本地运行测试你的web app各项功能
 - 链接可发送至上述邮箱（hr@simplylab.xyz）
 
-## 本题目要求使用的技术和packages
+## 题目要求
 
+#### 请使用以下技术/packages完成本题目：
 - [ReactJS](https://www.react.org/) 
   - [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html)
   - 全部使用[Function Components](https://reactjs.org/docs/components-and-props.html) ([Hooks](https://reactjs.org/docs/hooks-intro.html))，避免使用Class Components
 - [React Router](https://reactrouter.com/web/guides/quick-start)
 - [React Redux](https://react-redux.js.org/)
+- [Redux Thunk](https://redux.js.org/tutorials/fundamentals/part-6-async-logic#using-the-redux-thunk-middleware) (Middleware)
 - [Material UI](https://material-ui.com/)
 
-在完成项目的过程中，如果你觉得需要安装其他的packages（第三方的包/库)来完成某些功能，请随意安装，方法不限。只要能按要求实现web app就可以。
+#### 开发过程中，需要满足以下要求：
+- 虽然网页内容简单，但是请使用Redux进行状态管理:
+  - 所有API都请在Redux Action里调用（[Redux Thunk](https://redux.js.org/tutorials/fundamentals/part-6-async-logic#using-the-redux-thunk-middleware)支持在Action里使用async function)；
+  - 所有状态（state）请尽量全部用Redux（以及React Redux、Redux Thunk等）完成，尽量避免使用local state（[State Hook](https://reactjs.org/docs/hooks-state.html)）；
+- 所有的style都请尽量用[Material UI](https://material-ui.com/)组建完成
+
+- 项目名称为“BestSearch”
+- 整个项目能在本地服务器直接运行
+- 页面需要美观、流畅
+- UI的还原度高
+- 提交的web app需要为自适应（responsive design/响应式设计）
+
+在完成项目的过程中，如果你觉得需要安装其他的packages（第三方的包/库)来完成某些功能，请随意安装，方法不限。只要能按要求实现web app即可。
 
 ## 题目内容具体要求说明
 
 需要搭建的web app一共有两个页面（首页、搜索页），包含三种不同的状态：
 1. 首页
-2. 搜索页loading状态
-3. 搜索页结果显示
+2. 搜索页
+  2. loading状态
+  2. 结果显示
 
 其中以下的每个页面顶部都有一个导航栏，位置一直在网页最顶端，不随页面其他内容部分滑动。最左端显示一个网页Logo，名字为BestSearch，其中Best部分字体是加粗的。在任何一个网页点击这个BestSearch都会回到首页。
 
-需要实现的整个web app的demo可以点击这个链接观看：[web app demo](https://preinterview.s3.us-west-2.amazonaws.com/Lark20210825-170441.gif)
+需要实现的整个web app的demo可以点击这个链接观看：[web app demo](https://preinterview.s3.us-west-2.amazonaws.com/demo.mov)
 
 每个页面的具体细节描述如下：
 
@@ -68,9 +83,10 @@ http://localhost:3000/search/{keyword}
 比如如果用户希望搜索`Best cat toys`这个词，那么路径应为 http://localhost:3000/search/Best+cat+toys
 
 ###### 功能描述：
-由于前端网页向后台发送搜索请求并最终拿到返回的搜索结果是一个异步的过程，在用户点击回车键（或者右方搜索按钮）之后、前端网页拿到返回的搜索结果之前这个时间段内，会显示一个loading的状态，具体UI如下图所示。
+在搜索页的导航栏中，除了“BestSearch”的Logo以外，导航栏的水平居中位置会显示一个搜索框，搜索框中会显示目前正在搜索的关键词。
 
-同时，在搜索页的导航栏中，除了“BestSearch”的Logo以外，导航栏的水平居中位置会显示一个搜索框，搜索框中会显示目前正在搜索的关键词。
+在用户点击回车键（或者右方搜索按钮）之后、前端网页拿到返回的搜索结果之前这个时间段内，会显示一个loading的状态，具体UI如下图所示。
+
 
 用户可以通过三种不同的方式进入这个搜索页面进行搜索：
 1. 在首页中输入搜索词，点击回车键（或者右方搜索按钮），会跳转至此搜索页面进行搜索；
@@ -79,7 +95,7 @@ http://localhost:3000/search/{keyword}
 
 ###### UI如下图所示：
 
-![search loading page](https://preinterview.s3.us-west-2.amazonaws.com/Lark20210825-170433.png?raw=true)
+![search loading page](https://preinterview.s3.us-west-2.amazonaws.com/web_app_search_loading.png?raw=true)
 
 #### 搜索页结果显示
 
@@ -89,17 +105,20 @@ http://localhost:3000/search/{keyword}
 此部分与上述“搜索页loading状态”的URL相同。
 
 ###### 功能描述：
+
+与上述“搜索页loading状态”相同，在搜索页的导航栏中，除了“BestSearch”的Logo以外，导航栏的水平居中位置会显示一个搜索框，搜索框中会显示目前正在搜索的关键词。
+
 当前端网页得到后台返回的结果之后，会将搜索结果展现在此搜索页上。
 
-搜索结果内容分为三个板块：
-1. Recent product launches：用柱状图显示后台返回的信息；
-2. Related product trends：用堆叠面积图显示后台返回的信息；
-3. Related new products published in the last 7 days：用responsive layout grid显示后台返回的产品列表。
-同时，与上述“搜索页loading状态”相同，在搜索页的导航栏中，除了“BestSearch”的Logo以外，导航栏的水平居中位置会显示一个搜索框，搜索框中会显示目前正在搜索的关键词。
+搜索结果内容：
+- 标题：Related new products published in the last 7 days
+- 用responsive layout grid显示后台返回的结果列表
+
+
 
 ###### UI如下图所示：
 
-![search results page](https://preinterview.s3.us-west-2.amazonaws.com/Lark20210825-170429.png?raw=true)
+![search results page](https://preinterview.s3.us-west-2.amazonaws.com/web_app_search_results.png?raw=true)
 
 ## Web app开发要求说明
 
@@ -123,13 +142,6 @@ http://localhost:3000/search/{keyword}
 
 ```
 {
-  product_launch_data: [
-    { key_as_string: "2021-08-01T00:00:00.000Z", doc_count: 7 },
-    { key_as_string: "2021-08-02T00:00:00.000Z", doc_count: 1252 },
-    ...
-    { key_as_string: "2021-08-30T00:00:00.000Z", doc_count: 997 },
-    { key_as_string: "2021-08-31T00:00:00.000Z", doc_count: 1194 },
-  ],
   product_trends: [ 
   {
       name: "hat",
@@ -143,37 +155,15 @@ http://localhost:3000/search/{keyword}
     },
     ...
   ],
-  products: [
-    {
-      published_at: "2021-08-21T12:38:07-07:00",
-      title: "hat on hat dad hat",
-      price: "23.00",
-      store_domain: "recruiternest.com",
-      image: "https://images.lululemon.com/is/image/lululemon/LM9AA2S_047992_1"
-    },
-    ...
-    {
-      published_at: "2021-08-19T00:26:21+02:00",
-      title: "hat soft",
-      price: "129.95",
-      store_domain: "wheat.no",
-      image: "https://images.lululemon.com/is/image/lululemon/LM9AA3S_051348_1"
-    },
-  ],
+  ...
 }
 ```
 
 其中:
-- `product_launch_data`对应的是搜索结果里的Recently product launches柱状图，`key_as_string`对应横轴，`doc_count`对应纵轴；
-- `product_trends`对应的是搜索结果里的Related product trends面积图，date对应横轴，sv对应纵轴；
-- `products`对应的是搜索结果里的Related products published in the last 7 days。
+- `product_trends`是你需要使用的数据（对应的是搜索结果里的Related product trends面积图，date对应横轴，sv对应纵轴）；
 
-在开发、参考或模仿的过程中，需要满足以下条件：
-- 项目名称为“BestSearch”
-- 整个项目能在本地服务器直接运行
-- 页面需要美观、流畅，但是不需复杂，只需要最基本的框架和元素就可以
-- 尽量和上图中的UI做得像
-- 提交的web app需要为自适应（响应式设计、responsive design）
+- 返回的结果中还会包含`product_launch_data`和`products`，请忽略这两项数据。
+
 
 ## 常见问题
 
