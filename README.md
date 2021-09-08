@@ -13,7 +13,7 @@ SimplyLab的精英技术团队由来自于斯坦福大学、清华大学、Googl
 我们的面试为两轮，远程工程面试和现场项目面试。
 * 我们首先将进行远程工程面试，考察工程师的基本能力。我们有3种职位类型一共6个题目文件，您需要根据您选择面试的岗位选择相应的一道或者多道题目（完成的题目越多显示您越好的技术全面性），完成后通过文件中说明的方式发送解答邮件到我们的邮箱（如果完成了多道题目，请用总结在一封邮件中发给我们）。具体题目如下：
   * UI设计
-    * [前端设计](https://github.com/broken_link.md)
+    * [前端设计](https://github.com/interstellard/pre_interview/tree/main/ux)
   * 前端开发
     * [前端开发](https://github.com/interstellard/pre_interview/tree/main/web_app)
   * 后端及爬虫开发
