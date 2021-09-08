@@ -21,6 +21,6 @@
 
 ## 设计要求
 
-- 严格按照(Material Design)[https://material.io/] 的设计语言、风格进行此网页UI设计
+- 严格按照[Material Design](https://material.io/) 的设计语言、风格进行此网页UI设计
 - 网页各项功能的使用方法简单易懂，无需额外说明
 - 网页界面简洁美观
