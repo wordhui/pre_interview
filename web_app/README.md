@@ -38,10 +38,8 @@
 ## 题目内容具体要求说明
 
 需要搭建的web app一共有两个页面（首页、搜索页），包含三种不同的状态：
-- 首页
-- 搜索页
-  - loading状态
-  - 结果显示
+- (A) 首页
+- (B) 搜索页：loading状态、结果显示
 
 其中以下的每个页面顶部都有一个导航栏，位置一直在网页最顶端，不随页面其他内容部分滑动。最左端显示一个网页Logo，名字为BestSearch，其中Best部分字体是加粗的。在任何一个网页点击这个BestSearch都会回到首页。
 
@@ -49,7 +47,7 @@
 
 每个页面的具体细节描述如下：
 
-#### 首页
+#### (A) 首页
 
 ###### 网页的本地URL：
 http://localhost:3000/
@@ -69,7 +67,7 @@ http://localhost:3000/
 ![home page](https://preinterview.s3.us-west-2.amazonaws.com/Lark20210825-170437.png?raw=true)
 
 
-#### 搜索页loading状态
+#### (B) 搜索页
 
 ###### 网页的本地URL：
 http://localhost:3000/search/{keyword}
@@ -85,44 +83,28 @@ http://localhost:3000/search/{keyword}
 ###### 功能描述：
 在搜索页的导航栏中，除了“BestSearch”的Logo以外，导航栏的水平居中位置会显示一个搜索框，搜索框中会显示目前正在搜索的关键词。
 
-在用户点击回车键（或者右方搜索按钮）之后、前端网页拿到返回的搜索结果之前这个时间段内，会显示一个loading的状态，具体UI如下图所示。
+当前端网页得到后台返回的结果之后，会将搜索结果展现在此搜索页上。
 
+搜索结果内容：
+- 标题：Related product trends
+- 用responsive layout grid显示后台返回的结果列表
 
 用户可以通过三种不同的方式进入这个搜索页面进行搜索：
 1. 在首页中输入搜索词，点击回车键（或者右方搜索按钮），会跳转至此搜索页面进行搜索；
 2. 已经在搜索页的时候，在搜索框里输入一个与当前不同的搜索词，点击回车键（或者搜索按钮），会进行对于新搜索词的搜索；
 3. 在浏览器中直接输入一个带有搜索词的搜索页URL。比如用户直接在浏览器的地址栏输入 http://localhost:3000/search/Hat ，就可以进入此搜索页面搜索Hat相关的内容并最终看到搜索结果。
 
-###### UI如下图所示：
+###### loading状态UI如下图所示：
 
 ![search loading page](https://preinterview.s3.us-west-2.amazonaws.com/web_app_search_loading.png?raw=true)
 
-#### 搜索页结果显示
-
-###### 网页的本地URL：
-http://localhost:3000/search/{keyword}
-
-此部分与上述“搜索页loading状态”的URL相同。
-
-###### 功能描述：
-
-与上述“搜索页loading状态”相同，在搜索页的导航栏中，除了“BestSearch”的Logo以外，导航栏的水平居中位置会显示一个搜索框，搜索框中会显示目前正在搜索的关键词。
-
-当前端网页得到后台返回的结果之后，会将搜索结果展现在此搜索页上。
-
-搜索结果内容：
-- 标题：Related new products published in the last 7 days
-- 用responsive layout grid显示后台返回的结果列表
-
-
-
-###### UI如下图所示：
+###### 搜索页结果UI如下图所示：
 
 ![search results page](https://preinterview.s3.us-west-2.amazonaws.com/web_app_search_results.png?raw=true)
 
 ## Web app开发要求说明
 
-如上图所示，本题需要制作一个web app来完成一个简单的搜索动作。页面需要美观、流畅，但是不需复杂，只需要最基本的框架和元素就可以。
+如上图所示，本题需要制作一个web app来完成一个简单的搜索动作。页面需要美观、流畅。
 
 - 调用接口：API: http://3.141.23.218:5000/interview/keyword_search
   
@@ -161,23 +143,4 @@ http://localhost:3000/search/{keyword}
 
 其中:
 - `product_trends`是你需要使用的数据（对应的是搜索结果里的Related product trends面积图，date对应横轴，sv对应纵轴）；
-
 - 返回的结果中还会包含`product_launch_data`和`products`，请忽略这两项数据。
-
-
-## 常见问题
-
-如果你遇到如下错误
-
-```
-Access to XMLHttpRequest at 'http://3.141.23.218:5000/interview/keyword_search' from origin 
-'http://localhost:3000' has been blocked by CORS policy: Response to preflight request 
-doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the 
-requested resource.
-```
-
-可用通过安装[Access-Control-Allow-Origin Chrome插件](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf)来解决.
-
-安装这个插件后，将设置调整为如下截图所示即可解决CORS的问题：
-
-![search loading page](https://preinterview.s3.us-west-2.amazonaws.com/Allow_CORS.png?raw=true)
