@@ -26,11 +26,7 @@
   - 所有API都请在Redux Action里调用（[Redux Thunk](https://redux.js.org/tutorials/fundamentals/part-6-async-logic#using-the-redux-thunk-middleware)支持在Action里使用async function)；
   - 所有状态（state）请尽量全部用Redux（以及React Redux、Redux Thunk等）完成，尽量避免使用local state（[State Hook](https://reactjs.org/docs/hooks-state.html)）；
 - 所有的style都请尽量用[Material UI](https://material-ui.com/)组建完成
-
-- 项目名称为“BestSearch”
-- 整个项目能在本地服务器直接运行
-- 页面需要美观、流畅
-- UI的还原度高
+- 项目名称为“BestSearch”，整个项目能在本地服务器直接运行，页面需要美观、流畅,UI的还原度高
 - 提交的web app需要为自适应（responsive design/响应式设计）
 
 在完成项目的过程中，如果你觉得需要安装其他的packages（第三方的包/库)来完成某些功能，请随意安装，方法不限。只要能按以上要求实现web app即可。
@@ -53,14 +49,12 @@
 http://localhost:3000/
 
 ###### 功能描述：
-此页面为网页首页，全网页一共只有两个部分：
+首页，一共包含有两个部分：
 
 1. 一条"Search Trends"的标语，在页面水平居中的位置；
 2. 一个搜索框，搜索框的placeholder为“Search for new products in 961K stores”，搜索框右方有一个搜索按钮。
 
 用户可以通过（1）按回车键或者（2）点击右方搜索按钮这两种不同的方式触发搜索功能，从而跳转至搜索页 http://localhost:3000/search/{keyword} 进行搜索并显示搜索结果。
-
-同时，在首页中，整个导航栏里只有左端名为“BestSearch”的Logo这一个元素。
 
 ###### UI如下图所示：
 
