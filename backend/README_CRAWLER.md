@@ -12,5 +12,5 @@
 
 **基本的数据抓取任务:**
 
-##### (2)爬取aliexpress的商品搜索页面的产品列表信息（商品名称，图片url，售价，评分，销量等）
+##### 爬取aliexpress的商品搜索页面的产品列表信息（商品名称，图片url，售价，评分，销量等）
 * 搜索hat链接：https://www.aliexpress.com/wholesale?SearchText=hat
